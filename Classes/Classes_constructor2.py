@@ -1,4 +1,3 @@
-# program to calculate profit and loss of product using classes.
 class product():
     def __init__(self,name,cp,sp) -> None:
         self.name = name
@@ -9,7 +8,11 @@ class product():
     def info(self):
         print(f"{self.cp} is cost price of {self.name} and selling price is {self.sp} and makes {self.r} of {self.status}")
 
-a = product("Pen",10000,20000)
-a.info()
+x = int(input("How many products you have? "))
 
-# output-----> 10000 is cost price of Pen and selling price is 20000 and makes Profit of 10000
+for i in range(x):
+    name =input("Enter product name: ")
+    cp = int(input("Enter cost price: "))
+    sp = int(input("Enter selling price: "))
+    a = product(name,cp,sp)
+    a.info()
