@@ -17,5 +17,5 @@ for i in li:
         if i==j:
             lis.append(i)
 #Finding largest one
-print("GCD: ",max(lis))
+print("GCD: ",lis[-1])
             
